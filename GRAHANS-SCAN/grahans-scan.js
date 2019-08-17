@@ -49,6 +49,8 @@ let listaOrdenadaGlobal = [
   }
 ];
 
+listaOrdenadaGlobal.sort((a, b) => a.x - b.x);
+
 // Obtem a primeira lista de pontos
 const listaDePontosSuperiores = logica(listaOrdenadaGlobal);
 console.log(listaDePontosSuperiores);
