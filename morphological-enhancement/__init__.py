@@ -26,7 +26,7 @@ image_dilated = cv2.dilate(image_gray_scale, kernel, iterations=1)
 closing = cv2.erode(image, kernel, iterations=1)
 
 # generate top hat closing
-tap_hat_closing = cv2.subtract(img, closing)
+tap_hat_closing = cv2.subtract(closing, img)
 
 k = cv2.subtract(cv2.add(img,tap_hat_opening), tap_hat_closing)
 
