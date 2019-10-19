@@ -1,3 +1,7 @@
+# pip install opencv-python==3.4.2.16
+
+# pip install opencv-contrib-python==3.4.2.16
+
 import numpy as np
 import cv2
 
